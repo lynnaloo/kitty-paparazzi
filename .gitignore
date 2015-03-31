@@ -1,0 +1,5 @@
+spark/node_modules
+tessel/node_modules
+.env
+tessel/images/*.jpg
+*.log

@@ -1,0 +1,16 @@
+{
+  "author": "Linda Nichols <lynnaloo@gmail.com>",
+  "name": "kitty-paparazzi-tessel",
+  "keywords": "kitty tessel camera",
+  "version": "0.0.1",
+  "description": "Spark + Tessel on a Sumobot-jr with a camera",
+  "homepage": "",
+  "dependencies": {
+    "camera-vc0706": "^0.1.6",
+    "dotenv": "^0.4.0",
+    "tessel": "^0.3.11"
+  },
+  "engines": {
+    "node": "0.10.29"
+  }
+}

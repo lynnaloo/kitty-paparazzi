@@ -1,0 +1,18 @@
+{
+  "author": "Linda Nichols <lynnaloo@gmail.com>",
+  "name": "kitty-paparazzi-spark",
+  "keywords": "kitty spark tessel johnny-five camera",
+  "version": "0.0.1",
+  "description": "Spark + Tessel on a Sumobot-jr with a camera",
+  "homepage": "",
+  "dependencies": {
+    "dotenv": "^0.4.0",
+    "johnny-five": "^0.8.7",
+    "keypress": "^0.2.1",
+    "spark-io": "^0.5.1",
+    "sumobot": "latest"
+  },
+  "engines": {
+    "node": "0.10.29"
+  }
+}
