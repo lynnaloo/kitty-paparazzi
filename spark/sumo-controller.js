@@ -43,6 +43,8 @@ board.on("ready", function() {
     right: "right",
     space: "stop"
   };
+  
+  var mode;
 
   var mode;
 
