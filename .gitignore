@@ -1,5 +1,5 @@
-spark/node_modules
-tessel/node_modules
+node_modules
 .env
 tessel/images/*.jpg
 *.log
+.DS_Store

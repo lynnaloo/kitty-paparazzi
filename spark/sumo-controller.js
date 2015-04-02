@@ -1,13 +1,17 @@
-var keypress = require("keypress");
-var Spark = require("spark-io");
-var five = require("johnny-five");
+// ================================================
+// Sumobot Jr demo program (wireless with Spark-IO)
+// ================================================
+
+var five     = require("johnny-five");
+var Spark    = require("spark-io");
+var keypress = require('keypress');
 var Sumobot = require("sumobot")(five);
 var dotenv = require('dotenv');
 
+keypress(process.stdin);
+
 // load the spark token and device id from .env file
 dotenv.load();
-
-keypress(process.stdin);
 
 var board = new five.Board({
   io: new Spark({
@@ -40,6 +44,8 @@ board.on("ready", function() {
     space: "stop"
   };
 
+  var mode;
+
   // Ensure the bot is stopped
   bot.stop();
 
@@ -49,7 +55,7 @@ board.on("ready", function() {
   process.stdin.setRawMode(true);
 
   process.stdin.on("keypress", function(ch, key) {
-    var action, mode;
+    var action;
 
     if (!key) {
       return;
@@ -67,6 +73,7 @@ board.on("ready", function() {
       if (mode === action) {
         return;
       }
+      console.log(action);
       bot[action]();
       mode = action;
     }
