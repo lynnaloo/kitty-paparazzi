@@ -39,6 +39,8 @@ board.on("ready", function() {
     right: "right",
     space: "stop"
   };
+  
+  var mode;
 
   // Ensure the bot is stopped
   bot.stop();
@@ -49,7 +51,7 @@ board.on("ready", function() {
   process.stdin.setRawMode(true);
 
   process.stdin.on("keypress", function(ch, key) {
-    var action, mode;
+    var action;
 
     if (!key) {
       return;
