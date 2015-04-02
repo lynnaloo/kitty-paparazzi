@@ -43,7 +43,7 @@ board.on("ready", function() {
     right: "right",
     space: "stop"
   };
-  
+
   var mode;
 
   var mode;
@@ -66,7 +66,7 @@ board.on("ready", function() {
     action = actions[key.name] || key.name;
 
     if (action == "q") {
-      console.log("Shutting down");
+      console.log("Quitting");
       bot.stop();
       setTimeout(process.exit, 500);
     }
